@@ -1,0 +1,2 @@
+[dbservers]
+dbserver01 ansible_host='{{ pub_ip_1 }}' ansible_user='{{ remoteUser1 }}'

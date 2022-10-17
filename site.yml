@@ -1,0 +1,13 @@
+---
+- name: playbook to install mariadb-server
+  hosts: dbservers
+  vars_files:
+    - vars/secrets.yml
+  tasks:
+    - name: show username and password
+      ansible.builtin.debug:
+        var: username
+
+    - name: show username and password
+      ansible.builtin.debug:
+        var: password
